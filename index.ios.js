@@ -12,19 +12,20 @@ import {
   View
 } from 'react-native';
 
+import strings from './strings';
+
 export default class I18N_Sample extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          {strings.instruction1}
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          {strings.instruction2}
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          {strings.instruction3}
         </Text>
       </View>
     );
